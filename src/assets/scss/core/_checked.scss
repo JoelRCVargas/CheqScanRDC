@@ -1,0 +1,20 @@
+.checked{
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    padding: 2px;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.error{
+        background: red;
+    }
+    &.success{
+        background: #54D559;
+    }
+    & > img,
+    & > svg{
+        width: 100%;
+    }
+}

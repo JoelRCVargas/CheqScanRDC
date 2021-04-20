@@ -1,0 +1,21 @@
+.toggle-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: .7rem;
+    & > div{
+        width: 100%;
+        height: 2px;
+        background: $bgPrimary;
+        margin-left: auto;
+        &:nth-child(1){
+            width: calc(100% - 10px);
+        }
+        &:nth-child(2){
+            width: calc(100% - 5px);
+        }
+    }
+}

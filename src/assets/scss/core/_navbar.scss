@@ -1,0 +1,20 @@
+.navbar{
+    background: transparent;
+    padding: 0;
+    margin-bottom: 24px;
+    & > .navbar-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:745.98px){
+//    .navbar{
+//        & > .navbar-header{
+//            display: flex;
+//            flex-direction: column;
+//            flex-wrap: wrap;
+//        }
+//    }
+}

@@ -4,6 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path : 'home',
+    loadChildren: () => {
+      return import('./pages/home/home.module').then(m => m.HomeModule);
+    }
+  },
+  {
     path: '',
     redirectTo:'home',
     pathMatch: 'full'
@@ -11,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

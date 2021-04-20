@@ -1,0 +1,20 @@
+#content{
+    background: $bgPrimary;
+    padding: 0;
+    width: 100%;
+    & > .content-body{
+        padding: 32px 20px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background: #F7F7F7;
+        min-height: 100vh;
+    }
+}
+/*Media query*/
+@media(max-width:1020px){
+    #content{
+        & .section-body{
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+
+.navbar-options-content{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    & > .navbar-options{
+        background: #FFF;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        color: $colorPrimary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin-left: 35px;
+        cursor: pointer;
+        & > svg{
+            width: 24px;
+        }
+        
+    }
+    & .notification{
+        position: relative;
+        &.active::after{
+            position: absolute;
+            content: '';
+            background: red;
+            width: 16px;
+            height: 16px;
+            top: -8px;
+            right: -8px;
+            border-radius: 50%;
+            
+        }        
+    }
+}
+
+@media(max-width:745.98px){
+    .navbar-options-content{
+        & > .navbar-options{
+            margin-left: 0;
+            margin-right: 15px;
+            width: 35px;
+            height: 35px;
+            & > svg,
+            & > i{
+                font-size: 18px;
+                width: 18px;
+            }
+        
+        }
+    }
+}
