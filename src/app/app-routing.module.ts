@@ -10,6 +10,12 @@ const routes: Routes = [
     }
   },
   {
+    path : 'deposits',
+    loadChildren: () => {
+      return import('./pages/deposits/deposits.module').then(m => m.DepositsModule);
+    }
+  },
+  {
     path: '',
     redirectTo:'home',
     pathMatch: 'full'

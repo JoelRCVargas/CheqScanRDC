@@ -5,6 +5,8 @@
 }
 a{
     text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
 h1,h2,h3{
     padding-bottom: 0;
@@ -51,4 +53,16 @@ span{
 }
 .border-bottom{
     border-bottom: 1px solid #E5E5E5;
+}
+.color-bottom{
+    color: $bgBottom !important;
+}
+.color-danger{
+    color: red !important;
+}
+.color-success{
+    color: green !important;
+}
+.f-20{
+    font-size: 20px;
 }

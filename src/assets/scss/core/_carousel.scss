@@ -1,0 +1,12 @@
+.content-carousel{
+    & .carousel-control-prev-icon,
+    & .carousel-control-next-icon{
+        background-color: $bgBottom;
+        padding: 20px;
+        color: #FFF;
+    }
+    & .carousel-control-next, 
+    & .carousel-control-prev {
+        position: relative;
+    }
+}

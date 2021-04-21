@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarAnimationService } from './animations/sidebar-animation.service';
+import { AlertDeleteComponent } from './components/alert-delete/alert-delete.component';
+import { AlertSuccessComponent } from './components/alert-success/alert-success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlertDeleteComponent,
+    AlertSuccessComponent
   ],
   imports: [
     BrowserModule,

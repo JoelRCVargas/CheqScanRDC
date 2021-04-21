@@ -5,7 +5,8 @@
     color: #fff;
     transition: all 0.3s;
     padding: 16px;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     &.active {
         min-width: 110px;
         max-width: 110px;
@@ -94,8 +95,12 @@
             color: #FFF;
             background: $colorPrimary;
             border-radius: 8px;
+            outline: none;
             & svg{
                 fill: $bgBottom;
+                & > .icon{
+                    fill : $bgBottom;
+                }
             }
         }
         & > a:hover{
@@ -104,6 +109,9 @@
             border-radius: 8px;
             & svg{
                 fill: $bgBottom;
+                & > .icon{
+                    fill : $bgBottom;
+                }
             }
         }
     }
