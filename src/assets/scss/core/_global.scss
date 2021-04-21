@@ -5,7 +5,6 @@
 }
 a{
     text-decoration: none;
-    outline: none;
     cursor: pointer;
 }
 h1,h2,h3{
@@ -24,6 +23,7 @@ span{
     font-size: 24px;
     color: $colorPrimary;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 .subtitle{
     font-family: $fontTitle;

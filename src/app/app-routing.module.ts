@@ -10,7 +10,13 @@ const routes: Routes = [
     }
   },
   {
-    path : 'deposits/checks',
+    path : 'checks',
+    loadChildren: () => {
+      return import('./pages/check/check.module').then(m => m.CheckModule);
+    }
+  },
+  {
+    path : 'deposits',
     loadChildren: () => {
       return import('./pages/deposits/deposits.module').then(m => m.DepositsModule);
     }

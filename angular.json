@@ -124,14 +124,5 @@
         }
       }
     }},
-  "defaultProject": "cheqscanrdc",
-  "schematics": {
-    "@schematics/angular:component": {
-      "prefix": "app",
-      "styleext": "sass"
-    },
-    "@schematics/angular:directive": {
-      "prefix": "app"
-    }
-  }
+  "defaultProject": "cheqscanrdc"
 }

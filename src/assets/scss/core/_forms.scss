@@ -2,6 +2,23 @@
     width: 100%;
     margin-bottom: 20px;
     color: $colorText;
+    &.little-label{
+        & label{
+            text-align: left;
+            border-bottom: none;
+            color: #898A8D;
+            font-size: 10px;
+            line-height: 15px;
+        }
+        & input,
+        & select,
+        & textarea{
+            unicode-bidi: normal;
+            direction: inherit;
+            padding-left: 0;
+            font-weight: 400;
+        }
+    }
     & label{
         display: block;
         border-bottom: 1px solid $colorText;
@@ -14,7 +31,9 @@
         line-height: 37px;
         min-width: 130px;
     }
-    & input{
+    & input,
+    & select,
+    & textarea{
         width: 100%;
         border: none;
         border-bottom: 1px solid $colorText;
@@ -26,9 +45,17 @@
         color: $colorText;
         &:focus{
             box-shadow: none;
+            outline: inherit;
         }
     }
     & p{
         font-size: 12px;
     }
+}
+
+.content-form{
+    background: #FFF;
+    padding: 25px;
+    border-radius: 16px;
+    min-width: 450px;
 }
