@@ -22,6 +22,18 @@ const routes: Routes = [
     }
   },
   {
+    path : 'detail/deposits',
+    loadChildren: () => {
+      return import('./pages/deposits-detail/deposits-detail.module').then(m => m.DetailDepositsModule);
+    }
+  },
+  {
+    path : 'consult/deposits',
+    loadChildren: () => {
+      return import('./pages/deposits-consult/deposits-consult.module').then(m => m.ConsultDepositsModule);
+    }
+  },
+  {
     path: '',
     redirectTo:'home',
     pathMatch: 'full'

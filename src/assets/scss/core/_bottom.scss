@@ -11,6 +11,19 @@
     border: inherit;
     min-width: 140px;
     border-radius: 15px;
+    &.btn-little{
+        padding: 5px 15px;
+        width: auto;
+        min-width: inherit;
+        border-radius: 5px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        & > svg{
+            max-width: 24px;
+            height: 24px;
+        }
+    }
     &.btn-icon{
         display: flex;
         align-items: center;
@@ -26,6 +39,7 @@
         border: 1px solid $bgBottom;
         color: $bgBottom;
         border-radius: 15px;
+        margin-right: 5px;
         &:hover{
             color: #FFF;
         }

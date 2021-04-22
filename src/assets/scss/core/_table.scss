@@ -3,6 +3,21 @@
     margin-bottom: 22px;
     overflow-x:auto;
     min-width: 675px;
+    &.table-grid{
+        min-width: inherit;
+        width: 100%;
+        margin-right: 0;
+        & > .table{
+            min-width: inherit;
+            width: 100%;
+            & thead{
+                border-bottom: none;
+            }
+            & td{
+                border: 1px solid #CCC;
+            }
+        }
+    }
     &.w-100{
         margin-right: inherit;
         width: 100%;
@@ -13,6 +28,9 @@
         border-collapse: separate;
         border-spacing: 0;
         vertical-align: middle;
+        &.table-grid{
+            min-width: inherit;
+        }
         &.w-100{
             max-width: inherit;
             width: 100%;
@@ -31,7 +49,7 @@
         & td{
             color: #898A8D;
             font-family: $fontPrimary;
-            &:nth-child(4){
+            &.highlight{
                 color: $bgBottom;
                 width: 500;
                 text-decoration: underline;
@@ -71,6 +89,31 @@
         & thead{
             vertical-align: middle;
         }
+    }
+    & > .footer-table{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $bgBottom;
+        & > span{
+            color: inherit;
+        }
+        & > .btn-table-direction{
+            width: 24px;
+            height: 24px;
+            background: #f5f5f5;
+            border-radius: 50%;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            & > svg{
+                height: 100%;
+            }
+        }
+        
     }
 }
 

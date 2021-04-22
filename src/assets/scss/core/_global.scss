@@ -66,3 +66,15 @@ span{
 .f-20{
     font-size: 20px;
 }
+.border-none{
+    border-radius: 0 !important;
+}
+.border-right{
+    border-right: 1px solid #CCC !important;
+}
+.search{
+    display: none;
+    &.active{
+        display: block;
+    }
+}

@@ -19,6 +19,37 @@
             font-weight: 400;
         }
     }
+    &.dark-input{
+        &.w-100{
+            width: 100%;
+        }
+        & input,
+        & select,
+        & textarea{
+            unicode-bidi: normal;
+            direction: inherit;
+            border: 1px solid #CCCC;
+            border-radius: 5px;
+            padding-left:10px;
+            border-right: none;
+            background: #F7F7F7;
+            font-weight: 400;
+            color: $colorText;
+            &::placeholder{
+                color: $colorText;
+            }
+        }
+          & select{
+            border-right: 1px solid #CCC;
+        }
+        & .input-group-text{
+            border: none;
+            height: 100%;
+            background: #F7F7F7;
+            border: 1px solid #CCC;
+            border-left: none;
+        }
+    }
     & label{
         display: block;
         border-bottom: 1px solid $colorText;
@@ -27,9 +58,9 @@
         margin-bottom: 0;
         padding-right: 5px;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 37px;
-        min-width: 130px;
+        min-width: 150px;
     }
     & input,
     & select,
@@ -43,6 +74,7 @@
         font-weight: 600;
         padding: .4rem 0;
         color: $colorText;
+        font-size: 12px;
         &:focus{
             box-shadow: none;
             outline: inherit;

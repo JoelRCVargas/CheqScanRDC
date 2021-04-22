@@ -25,7 +25,7 @@
           </svg>
           Validar firmas
       </button>
-      <button type="button" class="btn-primary btn-icon mb-2">
+      <button type="button" class="btn-primary btn-icon mb-2" data-bs-toggle="modal" data-bs-target="#frmCheckExpresModal">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.2222 11.111H9.44444C9.13764 11.111 8.88889 11.3597 8.88889 11.6666C8.88889 11.9734 9.13764 12.2221 9.44444 12.2221H17.2222C17.529 12.2221 17.7778 11.9734 17.7778 11.6666C17.7778 11.3597 17.529 11.111 17.2222 11.111ZM5.13462 9.46123L4.91597 9.40481C3.82601 9.11998 3.86021 8.94311 3.89656 8.7554C3.96003 8.42717 4.58233 8.26008 5.3451 8.36588C5.58003 8.39842 5.8383 8.46949 6.08406 8.54491C6.3792 8.63658 6.68844 8.47005 6.77795 8.17651C6.86802 7.88356 6.70309 7.57269 6.40958 7.48262C6.06125 7.37574 5.78608 7.31085 5.54191 7.27401C5.54368 7.25613 5.55236 7.24057 5.55236 7.2222V6.66665C5.55236 6.35956 5.30389 6.11109 4.99681 6.11109C4.68972 6.11109 4.44125 6.35956 4.44125 6.66665V7.2222C4.44125 7.23265 4.4466 7.24126 4.44715 7.25158C3.55917 7.36494 2.94583 7.82463 2.80604 8.5438C2.53642 9.93161 3.95406 10.3022 4.63493 10.4801L4.86062 10.5376C5.98042 10.823 6.15132 10.9641 6.09708 11.244C6.03306 11.5722 5.41021 11.7421 4.64524 11.6336C4.3474 11.5939 3.98715 11.4784 3.66976 11.3769L3.49726 11.3216C3.20483 11.2321 2.89285 11.3916 2.8001 11.6846C2.70785 11.9775 2.87063 12.2895 3.16306 12.3817L3.33014 12.4349C3.67927 12.5467 4.07233 12.6695 4.45184 12.7251C4.45007 12.7433 4.44125 12.7591 4.44125 12.7778V13.3333C4.44125 13.6404 4.68972 13.8889 4.99681 13.8889C5.30389 13.8889 5.55236 13.6404 5.55236 13.3333V12.7778C5.55236 12.7601 5.54396 12.7452 5.54233 12.728C6.42497 12.6123 7.04774 12.173 7.18757 11.4562C7.46045 10.0531 6.06073 9.69672 5.13462 9.46123ZM17.2222 7.77776H9.44444C9.13764 7.77776 8.88889 8.02644 8.88889 8.33331C8.88889 8.64012 9.13764 8.88887 9.44444 8.88887H17.2222C17.529 8.88887 17.7778 8.64012 17.7778 8.33331C17.7778 8.02644 17.529 7.77776 17.2222 7.77776ZM17.7778 3.33331H2.22222C0.994931 3.33331 0 4.32824 0 5.55554V14.4444C0 15.6717 0.994931 16.6666 2.22222 16.6666H17.7778C19.0051 16.6666 20 15.6717 20 14.4444V5.55554C20 4.32824 19.0051 3.33331 17.7778 3.33331ZM18.8889 14.4444C18.8889 15.0571 18.3905 15.5555 17.7778 15.5555H2.22222C1.60955 15.5555 1.11111 15.0571 1.11111 14.4444V5.55554C1.11111 4.94286 1.60955 4.44442 2.22222 4.44442H17.7778C18.3905 4.44442 18.8889 4.94286 18.8889 5.55554V14.4444Z" fill="white"/>
           </svg>
@@ -263,3 +263,81 @@
   </div>
 </div>
 <!-- END MODALS -->
+
+<!-- MODAL DEPOSITO CHEQUE EXPRESS-->
+<div class="modal fade" id="frmCheckExpresModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="frmCheckExpresModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+          <div class="d-flex flex-column align-items-center text-left">
+              <form action="" class="w-100">
+                 <h1 class="title color-bottom mb-3">DEPÓSITO CHEQUE</h1>
+                  <div class="content-input">
+                      <div class="d-flex justify-content-beetween">
+                          <label for="inputPassword5" class="form-label">EMPRESA</label>
+                          <input type="text" id="bank" class="form-control" aria-describedby="bank" value="PLANMARKET">
+                      </div>
+                  </div>
+                  <div class="content-input">
+                      <div class="d-flex justify-content-beetween">
+                          <label for="inputPassword5" class="form-label">NÚMERO DE CUENTA</label>
+                          <input type="text" id="bank" class="form-control" aria-describedby="bank" value="888453155">
+                      </div>
+                  </div>
+                  <div class="content-input">
+                      <div class="d-flex justify-content-beetween">
+                          <label for="inputPassword5" class="form-label">NÚMERO DE TRANSACCIÓN</label>
+                          <input type="text" id="bank" class="form-control" aria-describedby="bank" value="2110">
+                      </div>
+                  </div>
+                  <div class="content-input">
+                      <div class="d-flex justify-content-beetween">
+                          <label for="inputPassword5" class="form-label">USUARIO</label>
+                          <input type="text" id="bank" class="form-control" aria-describedby="bank" value="FSANDOVAL">
+                      </div>
+                  </div>
+                  <div class="content-input">
+                      <div class="d-flex justify-content-beetween">
+                          <label for="inputPassword5" class="form-label">REFERENCIA</label>
+                          <input type="text" id="bank" class="form-control" aria-describedby="bank" value="12345674">
+                      </div>
+                  </div>
+                  
+              </form>
+              <div class="content-table table-grid">
+                  <table class="table w-100">
+                      <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Nº de cheques</th>
+                            <th scope="col">Monto</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Cheques Banco Pichincha</td>
+                              <td><b>1</b></td>
+                              <td><b>11.980.00</b></td>
+                          </tr>
+                          <tr>
+                              <td>Cheques Banco Pichincha</td>
+                              <td><b>1</b></td>
+                              <td><b>11.980.00</b></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="d-flex justify-content-around w-100">
+                  <span>Fecha : <b>2021 - 03 - 19</b></span>
+                  <span>Hora : <b>11:44:28</b></span>
+              </div>
+              <div class="options d-flex flex-wrap justify-content-around w-100 mt-3 mb-3">
+                  <button type="button" class="btn-primary btn-little" data-bs-dismiss="modal">IMPRIMIR</button>
+                  <button type="button" class="btn-primary btn-little" data-bs-dismiss="modal">CERRAR</button>
+                  <button type="button" class="btn-primary btn-little" data-bs-dismiss="modal">NUEVO DEPÓSITO</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
