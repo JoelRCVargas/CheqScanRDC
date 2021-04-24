@@ -34,6 +34,12 @@ const routes: Routes = [
     }
   },
   {
+    path : 'register',
+    loadChildren: () => {
+      return import('./pages/register/register.module').then(m => m.RegisterModule);
+    }
+  },
+  {
     path: '',
     redirectTo:'home',
     pathMatch: 'full'

@@ -72,9 +72,21 @@ span{
 .border-right{
     border-right: 1px solid #CCC !important;
 }
-.search{
-    display: none;
-    &.active{
-        display: block;
+#contratoModal{
+    & h1{
+        color: $colorPrimary;
     }
+    & p{
+        color: $colorPrimary;
+    }
+}
+.content-fixed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.overflow-hidden{
+    overflow: hidden;
+    max-width: 100%;
 }
